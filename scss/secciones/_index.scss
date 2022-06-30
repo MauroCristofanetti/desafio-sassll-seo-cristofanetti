@@ -1,0 +1,34 @@
+main{
+    display: flex;
+    background-image: url(../img/dtnS8CoN.jpg_medium);
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 10px;
+    align-items: flex-start;
+    justify-content: space-between;
+    article{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        padding: 1rem;
+        h3{
+            @include titulos(rgb(221, 108, 3),black)
+        }
+        div{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            img{
+                max-width: 300px;
+            }
+            p{
+                background-color: rgba(0, 0, 0, 0.308);
+                color: white;
+                max-width: 300px;
+                text-align: center;
+                @extend %estiloParrafo
+            }
+        }
+    }
+}

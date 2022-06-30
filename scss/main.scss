@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@import './variables/extend';
+@import './variables/mixins';
+
+.grilla {
+    display: grid;
+    grid-template-columns: 1fr 1fr .5fr;
+    grid-template-areas:
+        "header header header"
+        "main main aside"
+        "main main aside"
+        "footer footer footer";
+}
+
+.header {
+    grid-area: header;
+}
+
+.main {
+    grid-area: main;
+}
+
+.aside {
+    grid-area: aside;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+@import './secciones/index';
+@import './secciones/nosotros';
+@import './secciones/header';
+@import './secciones/footer';
+@import './secciones/aside';
