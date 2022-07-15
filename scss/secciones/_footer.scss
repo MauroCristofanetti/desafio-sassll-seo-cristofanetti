@@ -35,6 +35,9 @@ footer {
     div{
         img{
             width: 100px;
+            animation-name: rotacion;
+            animation-duration: .5s;
+            animation-iteration-count: infinite;
         }
     }
 }

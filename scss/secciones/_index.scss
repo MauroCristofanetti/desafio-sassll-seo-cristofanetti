@@ -12,7 +12,10 @@ main{
         flex-wrap: wrap;
         align-items: center;
         padding: 1rem;
+        margin: .5rem;
+        background-color: rgba(0, 0, 0, 0.308);
         h3{
+            font-family:Impact,  sans-serif;
             @include titulos(rgb(221, 108, 3),black)
         }
         div{
@@ -23,10 +26,6 @@ main{
                 max-width: 300px;
             }
             p{
-                background-color: rgba(0, 0, 0, 0.308);
-                color: white;
-                max-width: 300px;
-                text-align: center;
                 @extend %estiloParrafo
             }
         }
