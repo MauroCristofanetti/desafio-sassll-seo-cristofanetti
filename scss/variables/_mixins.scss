@@ -1,8 +1,10 @@
 @mixin titulos($colorFondo, $colorLetra){
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-align: center;
     border: solid 3px ;
     background-color: $colorFondo;
     color: $colorLetra;
     margin: .5rem;
+    padding: .5rem;
+    max-width: 15rem;
 }
